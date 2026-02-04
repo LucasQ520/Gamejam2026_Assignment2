@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68b82057b92fb724cb87ddb79d847b58, type: 3}
+  m_Name: Event_Give_Pencil
+  m_EditorClassIdentifier: 
+  eventId: 10
+  displayName: Give_Snacks
+  earlyDuration: 30
+  midDuration: 15
+  lateDuration: 10
+  lines:
+  - timeOffset: 0
+    text: You got an extra pencil?
+  - timeOffset: 4
+    text: My pencil is broken.
+  requirement:
+    type: 1
+    singleItem: 0
+    leftItem: 0
+    rightItem: 0
+    sequence: 02000000
+    requiredMask: 1
+    requiredDiceNumber: 0
+  onSuccess:
+    suspicionDelta: 0
+    oxygenPercentDelta: 0
+    instantGameOver: 0
+    reactionText: Thanks bro.
+  onFailTimeout:
+    suspicionDelta: 1
+    oxygenPercentDelta: 0
+    instantGameOver: 0
+    reactionText: Just say no next time.
+  onFailWrongItem:
+    suspicionDelta: 1
+    oxygenPercentDelta: 0
+    instantGameOver: 0
+    reactionText: I don't need this.
+  onFailNoHumanMask:
+    suspicionDelta: 0
+    oxygenPercentDelta: 0
+    instantGameOver: 0
+    reactionText: 
+  speaker: 1
+  flipFacingDuringEvent: 0
+  studentTargetMode: 1
+  studentId: B

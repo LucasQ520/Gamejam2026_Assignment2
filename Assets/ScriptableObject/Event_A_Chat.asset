@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68b82057b92fb724cb87ddb79d847b58, type: 3}
+  m_Name: Event_A_Chat
+  m_EditorClassIdentifier: 
+  eventId: 7
+  displayName: Chat
+  earlyDuration: 30
+  midDuration: 15
+  lateDuration: 10
+  lines:
+  - timeOffset: 0
+    text: What time you finished your homework?
+  - timeOffset: 4
+    text: Why ain't you talking
+  requirement:
+    type: 0
+    singleItem: 9
+    leftItem: 0
+    rightItem: 0
+    sequence: 
+    requiredMask: 1
+    requiredDiceNumber: 0
+  onSuccess:
+    suspicionDelta: 0
+    oxygenPercentDelta: 0
+    instantGameOver: 0
+    reactionText: Yeah, same.
+  onFailTimeout:
+    suspicionDelta: 1
+    oxygenPercentDelta: 0
+    instantGameOver: 0
+    reactionText: Answer me next time.
+  onFailWrongItem:
+    suspicionDelta: 1
+    oxygenPercentDelta: 0
+    instantGameOver: 0
+    reactionText: What are you saying.
+  onFailNoHumanMask:
+    suspicionDelta: 0
+    oxygenPercentDelta: 0
+    instantGameOver: 0
+    reactionText: 
+  speaker: 1
+  flipFacingDuringEvent: 1
+  studentTargetMode: 1
+  studentId: A

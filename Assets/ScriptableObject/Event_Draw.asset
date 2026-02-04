@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68b82057b92fb724cb87ddb79d847b58, type: 3}
+  m_Name: Event_Draw
+  m_EditorClassIdentifier: 
+  eventId: 12
+  displayName: Draw Triangle
+  earlyDuration: 30
+  midDuration: 15
+  lateDuration: 10
+  lines:
+  - timeOffset: 0
+    text: Folks, draw a triangle.
+  - timeOffset: 4
+    text: Just use your ruler and pencils.
+  requirement:
+    type: 1
+    singleItem: 0
+    leftItem: 1
+    rightItem: 2
+    sequence: 
+    requiredMask: 1
+    requiredDiceNumber: 0
+  onSuccess:
+    suspicionDelta: 0
+    oxygenPercentDelta: 0
+    instantGameOver: 0
+    reactionText: Nice job.
+  onFailTimeout:
+    suspicionDelta: 1
+    oxygenPercentDelta: 0
+    instantGameOver: 0
+    reactionText: Easy task.
+  onFailWrongItem:
+    suspicionDelta: 1
+    oxygenPercentDelta: 0
+    instantGameOver: 0
+    reactionText: It's a simple job c'mon.
+  onFailNoHumanMask:
+    suspicionDelta: 0
+    oxygenPercentDelta: 0
+    instantGameOver: 0
+    reactionText: 
+  speaker: 0
+  flipFacingDuringEvent: 0
+  studentTargetMode: 0
+  studentId: 
